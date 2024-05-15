@@ -10,7 +10,7 @@ class PrintCoveragePlugin implements Plugin<Project> {
   void apply(Project target) {
     target.tasks.withType(JacocoReport) {
       reports {
-        xml.enabled true
+        xml.required true
       }
     }
 
