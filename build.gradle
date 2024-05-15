@@ -42,8 +42,8 @@ task codeCoverageReport(type: JacocoReport) {
   sourceSets sourceSets.main
 
   reports {
-    xml.enabled true
+    xml.required true
     xml.destination file("${buildDir}/reports/jacoco/report.xml")
-    html.enabled false
+    html.required false
   }
 }
